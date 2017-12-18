@@ -2,50 +2,76 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://use.fontawesome.com/bcf5b9cb71.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <title>Sarah Yu</title>
   </head>
   <body>
-    <header>
-      <h1>Sarah Yu is currently learning HTML, CSS, JavaScript, Ruby, Rails, Node, Express, and React. Check out her <a href="https://github.com/sarah-yu">code</a>, connect with her on <a href="https://www.linkedin.com/in/sarah---yu/">LinkedIn</a>, follow her on <a href="#">Instagram</a>, or send her an <a href="mailto:sarahyu.work@gmail.com">email</a>! </h1>
-    </header>
-    <main>
-      <div class="project">
-        <div class="project-img">
-          <img src="img/project-1.jpg" alt="project 1">
+    <div class="wrapper">
+
+      <!-- <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+      </nav> -->
+
+      <main>
+        <section id="about">
+          <header>
+            <h1>Hello  <i class="em-svg em-v"></i></h1>
+          </header>
+          <h1>I'm Sarah Yu, a web developer inspired by clean and thoughtful design. I enjoy thinking creatively to craft intuitive solutions to complex problems.</h1>
+        </section>
+
+        <section id="portfolio">
+          <header>
+            <h2>Portfolio</h2>
+            <div>
+            </div>
+          </header>
+          <div class="project">
+            <div class="project-img">
+              <img id="simon-img" src="img/simon.png" alt="simon learns chinese">
+            </div>
+            <div class="project-info">
+              <h3>Simon Learns Chinese</h3>
+              <p class="project-tech">JavaScript/jQuery, HTML/CSS</p>
+              <p>Simon Learns Chinese is based on the concept of the memory game, Simon, and inspired by gamified language learning apps. The purpose of the game is to test the user's memory while allowing the user to gain a basic but intuitive understanding of the Chinese language through repeated exposure to simple vocabulary and grammar patterns.</p>
+              <span class="project-links"><a href="https://sarah-yu.github.io/simon" target="_blank">Live</a> | <a href="https://github.com/sarah-yu/simon" target="_blank">Code</a></span>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-img">
+              <img id="winona-img" src="img/winona.png" alt="winona">
+            </div>
+            <div class="project-info">
+              <h3>Winona</h3>
+              <p class="project-tech">Ruby on Rails, HTML/CSS, The Movie Database API</p>
+              <p>Winona is an app where users can create lists of movies to keep track of their favorite movies and movies that they want to watch.</p>
+              <span class="project-links"><a href="https://winona-movies.herokuapp.com" target="_blank">Live</a> | <a href="https://github.com/sarah-yu/winona" target="_blank">Code</a></span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <div class="contact-left">
+          <h2>Say Hello <i class="fa fa-smile-o" aria-hidden="true"></i></h2>
+          <h3 class="email-link"><a href="#">sarahyu.work@gmail.com</a></h3>
+          <h3><a href="https://www.linkedin.com/in/sarah---yu">LinkedIn</a></h3>
+          <h3><a href="https://github.com/sarah-yu">Github</a></h3>
         </div>
-        <h3><a href="#">Project Name 1</a></h3>
-        <p>Project Description placeholder. Blue mountain froth, sweet wings coffee, lungo, rich filter cappuccino grinder irish mazagran. Doppio, aromatic instant brewed, blue mountain, aged crema cup to go kopi-luwak medium. Whipped brewed qui eu to go, siphon aroma medium milk latte.</p>
-      </div>
-      <div class="project">
-        <div class="project-img">
-          <img src="img/project-2.jpg" alt="project 2">
+
+        <div class="contact-right">
         </div>
-        <h3><a href="#">Project Name 2</a></h3>
-        <p>Project Description placeholder. Mug robust aromatic, cappuccino, barista rich robust instant cream. Aroma robust, sugar aromatic so roast crema doppio. Steamed, sweet sit mazagran body plunger pot grounds sugar.</p>
-      </div>
-      <div class="project">
-        <div class="project-img">
-          <img src="img/project-3.jpg" alt="project 3">
-        </div>
-        <h3><a href="#">Project Name 3</a></h3>
-        <p>Project Description placeholder. To go, steamed flavour, java, macchiato, roast extra americano body et blue mountain. Qui at, siphon et whipped dripper white.</p>
-      </div>
-      <div class="project">
-        <div class="project-img">
-          <img src="img/project-4.jpg" alt="project 4">
-        </div>
-        <h3><a href="#">Project Name 4</a></h3>
-        <p>Project Description placeholder. Lungo mocha at sit cinnamon, galão cinnamon roast dark mazagran seasonal. Café au lait, kopi-luwak cinnamon, strong kopi-luwak cappuccino caffeine chicory. Id iced spoon instant macchiato percolator medium. Irish extraction foam sugar con panna extraction flavour.</p>
-      </div>
-    </main>
-    <footer>
-      <a href="https://github.com/sarah-yu"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/sarah---yu/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-      <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      <a href="mailto:sarahyu.work@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-    </footer>
+      </footer>
+
+    </div>
   </body>
 </html>
