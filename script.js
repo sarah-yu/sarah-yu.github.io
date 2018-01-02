@@ -12,4 +12,11 @@ $('document').ready(() => {
 	$('#winona-img').mouseleave(function() {
 		$(this).attr('src', 'img/winona.png')
 	})
+
+	$('#murakami-img').mouseenter(function() {
+		$(this).attr('src', 'img/murakami-hover.png')
+	})
+	$('#murakami-img').mouseleave(function() {
+		$(this).attr('src', 'img/murakami.png')
+	})
 })
