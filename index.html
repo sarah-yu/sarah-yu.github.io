@@ -4,95 +4,136 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Sarah Yu | Web Developer</title>
-    <meta name="description" content="Portfolio of projects and work by Sarah Yu, a front-end web developer currently based in Washington, D.C.">
+    <meta name="description" content="Portfolio of projects and work by Sarah Yu, a front-end web developer based in Washington, D.C.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!--  HK GROTESK -->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+    <!-- NORMALIZE -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
     <link rel="stylesheet" href="style.css">
-
+    <!--  FONT AWESOME -->
     <script src="https://use.fontawesome.com/bcf5b9cb71.js"></script>
+    <!--  JQUERY -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--  SCRIPT.JS-->
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <header>
-      <h1 class="about-heading">Hello, I'm Sarah <i class="em em-v"></i></h1>
-      <div class="about-muscat">
-
-      </div>
-      <p class="about-info">I'm a web developer inspired by clean and thoughtful design. I love coding meaningful and intuitive web experiences and playing with my tuxedo cat, Muscat.</p>
+      <nav>
+        <a href="#" class="logo h3">Sarah Yu</a>
+        <a href="#contact" class="contact-open-close h3">Contact</a>
+      </nav>
     </header>
 
-    <main>
-      <h2 class="projects-heading">Projects</h2>
-      <div class="project" id="murakami-project">
-        <div class="project-img">
-          <img id="murakami-img" src="img/murakami.png" alt="Murakami, a Haruki Murakami random quote generator.">
-        </div>
-        <div class="project-info">
-          <div class="project-title">
-            <h3>Murakami</h3>
-          </div>
-          <div class="project-tech small">
-            MongoDB, Express.js, Vue.js, Node.js, JavaScript/jQuery, HTML/CSS
-          </div>
-          <div class="project-blurb">
-            <p>A Haruki Murakami random quote generator, designed to evoke the same sense of simplicity and surrealness present throughout the author's books.</p>
-          </div>
-          <div class="project-links small">
-            <a href="http://murakami.surge.sh" target="_blank">Live</a> <!--/ <a href="#" target="_blank">Code</a>-->
-          </div>
-        </div>
-      </div><!-- #murakami-project -->
-
-      <div class="project" id="winona-project">
-        <div class="project-img">
-          <img id="winona-img" src="img/winona.png" alt="Winona, an app to help you keep track of your favorite movies.">
-        </div>
-        <div class="project-info">
-          <div class="project-title">
-            <h3>Winona</h3>
-          </div>
-          <div class="project-tech small">
-            Ruby on Rails, HTML/CSS, The Movie Database API
-          </div>
-          <div class="project-blurb">
-            <p>Winona is an app where users can create lists of movies to keep track of their favorite movies and movies that they want to watch.</p>
-          </div>
-          <div class="project-links small">
-            <a href="https://winona-movies.herokuapp.com" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/winona" target="_blank">Code</a>
+    <section class="overlay">
+      <div class="contact-container">
+        <header>
+          <nav>
+            <a href="#" class="logo contact-open-close h3">Sarah Yu</a>
+            <a href="/contact" class="contact-open-close h3">Close</a>
+          </nav>
+        </header>
+        <div class="contact-content">
+          <!-- <div class="contact-intro"> -->
+            <p class="contact-intro h2">I am currently based in Washington DC, but am open to opportunities in other cities in the US and around the world. Get in touch!</p>
+          <!-- </div> -->
+          <div class="contact-links">
+            <a href="mailto:sarahyu.work@gmail.com" class="contact-email h2">Email</a>
+            <a href="https://www.linkedin.com/in/sarah---yu" class="contact-linkedin h2" target="_blank">LinkedIn</a>
+            <a href="https://github.com/sarah-yu" class="contact-github h2" target="_blank">GitHub</a>
+            <a href="pdf/sarah-yu-resume.pdf" class="contact-resume h2" target="_blank">Resume</a>
           </div>
         </div>
-      </div><!-- #winona-project -->
-
-      <div class="project" id="simon-project">
-        <div class="project-img">
-          <img id="simon-img" src="img/simon.png" alt="Simon learns Chinese, test your memory while learning Chinese!">
-        </div>
-        <div class="project-info">
-          <div class="project-title">
-            <h3>Simon Learns Chinese</h3>
-          </div>
-          <div class="project-tech small">
-            JavaScript/jQuery, HTML/CSS
-          </div>
-          <div class="project-blurb">
-            <p>Simon Learns Chinese is based on the concept of the memory game, Simon, and inspired by gamified language learning apps. The purpose of the game is to test the user's memory while allowing the user to gain a basic but intuitive understanding of the Chinese language through repeated exposure to simple vocabulary and grammar patterns.</p>
-          </div>
-          <div class="project-links small">
-            <a href="https://sarah-yu.github.io/simon" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/simon" target="_blank">Code</a>
-          </div>
-        </div>
-      </div><!-- #simon-project -->
-    </main>
-
-    <footer>
-        <p>&copy; Sarah Yu</p>
-        <div class="contact-info">
-          <a href="mailto:sarahyu.work@gmail.com">Email</a> / <a href="https://www.linkedin.com/in/sarah---yu">LinkedIn</a> / <a href="https://github.com/sarah-yu">GitHub</a>
       </div>
-    </footer>
+    </section>
+
+    <main class="main">
+      <section class="about-container">
+        <p class="about-content h2">Hello ✌🏻 I'm Sarah, a web developer inspired by clean and thoughtful design. I love coding meaningful and intuitive web experiences.</p>
+      </section>
+
+      <section class="projects-container">
+        <article class="project">
+          <figure class="project-image">
+            <a href="http://piece-peace.surge.sh" target="_blank">
+              <img src="img/piece-peace.png" id="piece-peace-img" alt="Piece Peace, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Piece Peace</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">React.js</span>
+              <span class="project-tech-button small">Express.js</span>
+              <span class="project-tech-button small">Node.js</span>
+              <span class="project-tech-button small">MongoDB</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="http://piece-peace.surge.sh" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/piece-peace" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">For my fourth class project, I used React to try and recreate some features of Pinterest. The outcome was Piece Peace, an image management tool where users can save images that inspire them. Users can create "mood boards" and pin images to these boards. The app currently features CRUD functionality, and I am working on a bookmarklet so that users can more easily pin images that they find around the web.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-image">
+            <a href="http://murakami.surge.sh" target="_blank">
+              <img src="img/murakami.png" id="murakami-img" alt="Murakami, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Murakami</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">Vue.js</span>
+              <span class="project-tech-button small">Express.js</span>
+              <span class="project-tech-button small">Node.js</span>
+              <span class="project-tech-button small">MongoDB</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="http://murakami.surge.sh" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/murakami" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">A Haruki Murakami random quote generator, designed to evoke the same sense of simplicity and surrealness present throughout the author's books. I built this after a Teach Yourself Day in class, where I taught myself Vue.js. The Vue.js front-end is deployed to Surge, and the back-end is hosted on Heroku with mLab supporting the Mongo database.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-image">
+            <a href="https://winona-movies.herokuapp.com" target="_blank">
+              <img src="img/winona.png" id="winona-img" alt="Winona, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Winona</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">Ruby on Rails</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+              <span class="project-tech-button small">PostgreSQL</span>
+            </p>
+            <p class="project-links small"><a href="https://winona-movies.herokuapp.com" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/winona" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">Winona is an app where users can create lists to keep track of their favorite movies and movies that they want to watch. It uses The Movie Database API so that users can easily search for movies that they are interested in. I built this for my second class project, where we were asked to create a CRUD app using Ruby on Rails.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-image">
+            <a href="https://sarah-yu.github.io/simon" target="_blank">
+              <img src="img/simon.png" id="simon-img" alt="Simon Learns Chinese, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Simon Learns Chinese</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">JavaScript/jQuery</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="https://sarah-yu.github.io/simon" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/simon" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">For my first class project, I created Simon Learns Chinese, an app based on the concept of the memory game, Simon, and inspired by gamified language learning apps. The purpose of the game is to test users' memories while allowing users to gain a basic but intuitive understanding of the Chinese language through repeated exposure to simple vocabulary and grammar patterns.
+          </p>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
