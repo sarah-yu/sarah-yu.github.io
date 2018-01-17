@@ -116,6 +116,7 @@ main {
 .contact-intro {
 	grid-column: 2 / 4;
 	color: #333;
+	margin-top: 40px;
 	margin-bottom: 30px;
 }
 
@@ -127,13 +128,12 @@ main {
 
 .contact-content a {
 	display: block;
-	/* width: 100vw; */
 	padding: 1rem 2rem;
 }
 
 a.contact-email {
-	background-color: rgba(247, 146, 160, 0.3);
-	/* border-bottom: 10px solid rgba(247, 146, 160, 0.3); */
+	/* background-color: rgba(247, 146, 160, 0.3); */
+	border-bottom: 10px solid rgba(247, 146, 160, 0.3);
 }
 
 a.contact-email:hover {
@@ -142,8 +142,8 @@ a.contact-email:hover {
 }
 
 a.contact-linkedin {
-	background-color: rgba(247, 177, 140, 0.3);
-	/* border-bottom: 10px solid rgba(247, 177, 140, 0.3); */
+	/* background-color: rgba(247, 177, 140, 0.3); */
+	border-bottom: 10px solid rgba(247, 177, 140, 0.3);
 }
 
 a.contact-linkedin:hover {
@@ -152,8 +152,8 @@ a.contact-linkedin:hover {
 }
 
 a.contact-github {
-	background-color: rgba(0, 176, 152, 0.3);
-	/* border-bottom: 10px solid rgba(0, 176, 152, 0.3); */
+	/* background-color: rgba(0, 176, 152, 0.3); */
+	border-bottom: 10px solid rgba(0, 176, 152, 0.3);
 }
 
 a.contact-github:hover {
@@ -162,8 +162,8 @@ a.contact-github:hover {
 }
 
 a.contact-resume {
-	background-color: rgba(0, 104, 194, 0.3);
-	/* border-bottom: 10px solid rgba(0, 104, 194, 0.3); */
+	/* background-color: rgba(0, 104, 194, 0.3); */
+	border-bottom: 10px solid rgba(0, 104, 194, 0.3);
 }
 
 a.contact-resume:hover {
@@ -212,7 +212,7 @@ a.contact-resume:hover {
 
 .project-tech-button {
 	display: inline-block;
-	border: 1px solid #888;
+	border: 1px solid #d3d3d3;
 	color: #888;
 	margin: 3px 3px 3px 0;
 	padding: 1px 4px 0.3px 4px;
@@ -220,6 +220,7 @@ a.contact-resume:hover {
 
 .project-description {
 	grid-column: 5 / 9;
+	margin-bottom: 50px;
 	padding-left: 40px;
 }
 

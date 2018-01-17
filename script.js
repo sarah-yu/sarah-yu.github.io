@@ -1,4 +1,5 @@
 $('document').ready(() => {
+	// project image hover
 	$('#simon-img').mouseenter(function() {
 		$(this).attr('src', 'img/simon.gif')
 	})
@@ -27,18 +28,7 @@ $('document').ready(() => {
 		$(this).attr('src', 'img/piece-peace.png')
 	})
 
-	let muscatLink = $('.muscat-link')
-	let muscatImage = $('.muscat-image')
-
-	muscatLink.hover(
-		function() {
-			muscatImage.addClass('muscat-image-show')
-		},
-		function() {
-			muscatImage.removeClass('muscat-image-show')
-		}
-	)
-
+	// open and close contact
 	let contactOpenClose = $('.contact-open-close')
 	let overlay = $('.overlay')
 	let main = $('.main')
@@ -46,7 +36,6 @@ $('document').ready(() => {
 	contactOpenClose.on('click', e => {
 		e.preventDefault()
 
-		// $('body').toggleClass('is-active')
 		overlay.fadeToggle(400)
 		main.toggleClass('hide-main')
 	})
