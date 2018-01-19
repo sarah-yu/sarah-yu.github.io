@@ -141,6 +141,10 @@ a.contact-email:hover {
 	transition: color 150ms ease-in;
 }
 
+a.contact-email::after {
+	content: ' — sarahyu.work@gmail.com';
+}
+
 a.contact-linkedin {
 	/* background-color: rgba(247, 177, 140, 0.3); */
 	border-bottom: 10px solid rgba(247, 177, 140, 0.3);
@@ -149,6 +153,10 @@ a.contact-linkedin {
 a.contact-linkedin:hover {
 	color: rgba(247, 177, 140, 1);
 	transition: color 150ms ease-in;
+}
+
+a.contact-linkedin::after {
+	content: ' — linkedin.com/in/sarah---yu';
 }
 
 a.contact-github {
@@ -161,6 +169,10 @@ a.contact-github:hover {
 	transition: color 150ms ease-in;
 }
 
+a.contact-github::after {
+	content: ' — github.com/sarah-yu';
+}
+
 a.contact-resume {
 	/* background-color: rgba(0, 104, 194, 0.3); */
 	border-bottom: 10px solid rgba(0, 104, 194, 0.3);
@@ -171,17 +183,51 @@ a.contact-resume:hover {
 	transition: color 150ms ease-in;
 }
 
+a.contact-resume::after {
+	content: ' — download pdf';
+}
+
 /*  ABOUT */
 .about-container {
 	display: grid;
-	grid-template-columns: 15vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 15vw;
-	min-height: 50vh;
+	grid-template-columns: 15vw 1fr 15vw;
+	min-height: 100vh;
 	margin-top: 10vh;
 }
 
 .about-content {
-	grid-column: 3 / 8;
+	grid-column: 2 / -2;
 	margin-top: 80px;
+	font-size: 48px;
+}
+
+.scroll-down-icon {
+	grid-column: 1 / -1;
+	color: #888;
+	margin-top: 20vh;
+	text-align: center;
+}
+
+.bounce {
+	-moz-animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-6px);
+	}
+	60% {
+		transform: translateY(-3px);
+	}
 }
 
 /* PROJECT */
@@ -238,6 +284,7 @@ a.contact-resume:hover {
 
 	.about-content {
 		grid-column: 2 / -2;
+		font-size: 36px;
 	}
 
 	/* PROJECT */
@@ -255,6 +302,22 @@ a.contact-resume:hover {
 	.contact-intro {
 		grid-column: 2 / -2;
 		font-size: 22px;
+	}
+
+	a.contact-email::after {
+		content: '';
+	}
+
+	a.contact-linkedin::after {
+		content: '';
+	}
+
+	a.contact-github::after {
+		content: '';
+	}
+
+	a.contact-resume::after {
+		content: '';
 	}
 
 	/*  ABOUT */
