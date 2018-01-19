@@ -201,6 +201,10 @@ a.contact-resume::after {
 	font-size: 48px;
 }
 
+.about-important {
+	color: #555;
+}
+
 .scroll-down-icon {
 	grid-column: 1 / -1;
 	color: #888;
