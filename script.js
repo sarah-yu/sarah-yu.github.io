@@ -31,7 +31,7 @@ $('document').ready(() => {
 	// open and close contact
 	let contactOpenClose = $('.contact-open-close')
 	let overlay = $('.overlay')
-	let main = $('.main')
+	let main = $('main')
 
 	contactOpenClose.on('click', e => {
 		e.preventDefault()

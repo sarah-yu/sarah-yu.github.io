@@ -20,6 +20,139 @@
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
-    
+    <header>
+      <nav>
+        <a href="/" class="logo">Sarah Yu</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <p class="about-content">Sarah is a web developer driven by a desire to understand and a love for clean design. She loves coding thoughtful solutions and meaningful experiences.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <article class="project">
+          <figure class="project-img">
+            <a href="http://piece-peace.surge.sh" target="_blank">
+              <img src="img/piece-peace.png" id="piece-peace-img" alt="Piece Peace, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Piece Peace</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">React.js</span>
+              <span class="project-tech-button small">Express.js</span>
+              <span class="project-tech-button small">Node.js</span>
+              <span class="project-tech-button small">MongoDB</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="http://piece-peace.surge.sh" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/piece-peace" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">Piece Peace is an image management tool inspired by Pinterest. Users can save images that inspire them and organize them by categories of their choosing by creating "mood boards". The app currently features CRUD functionality, and I am working on a bookmarklet so that users can more easily pin images that they find around the web.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-img">
+            <a href="http://murakami.surge.sh" target="_blank">
+              <img src="img/murakami.png" id="murakami-img" alt="Murakami, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Murakami</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">Vue.js</span>
+              <span class="project-tech-button small">Express.js</span>
+              <span class="project-tech-button small">Node.js</span>
+              <span class="project-tech-button small">MongoDB</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="http://murakami.surge.sh" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/murakami" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">A Haruki Murakami random quote generator, designed to evoke the same sense of simplicity and surrealness present throughout the author's books. I built this after a Teach Yourself Day in class, where I taught myself Vue.js. The Vue.js front-end is deployed to Surge, and the back-end is hosted on Heroku with mLab supporting the Mongo database.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-img">
+            <a href="http://coolbeans.surge.sh" target="_blank">
+              <img src="img/cool-beans.png" alt="Cool Beans, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Cool Beans</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">React.js</span>
+              <span class="project-tech-button small">Express.js</span>
+              <span class="project-tech-button small">Node.js</span>
+              <span class="project-tech-button small">MongoDB</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="http://coolbeans.surge.sh" target="_blank">Live</a> / <a href="https://github.com/mortiz01/coolbeans-front" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">Cool Beans is a resource on coffees from around the world, and recommends new coffees to users based on taste preferences. This app was created by me and two other group members using React.</p>
+        </article>
+
+        <article class="project">
+          <figure class="project-img">
+            <a href="https://winona-movies.herokuapp.com" target="_blank">
+              <img src="img/winona.png" id="winona-img" alt="Winona, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Winona</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">Ruby on Rails</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+              <span class="project-tech-button small">PostgreSQL</span>
+              <span class="project-tech-button small">TMDB API</span>
+            </p>
+            <p class="project-links small"><a href="https://winona-movies.herokuapp.com" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/winona" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">Winona is an app where users can create lists to keep track of their favorite movies and movies that they want to watch. It uses The Movie Database API so that users can easily search through an extensive database for movies that they are interested in.
+          </p>
+        </article>
+
+        <article class="project">
+          <figure class="project-img">
+            <a href="https://sarah-yu.github.io/simon" target="_blank">
+              <img src="img/simon.png" id="simon-img" alt="Simon Learns Chinese, project thumbnail" />
+            </a>
+          </figure>
+          <div class="project-info">
+            <h3 class="project-name">Simon Learns Chinese</h3>
+            <p class="project-tech">
+              <span class="project-tech-button small">JavaScript/jQuery</span>
+              <span class="project-tech-button small">HTML/CSS</span>
+            </p>
+            <p class="project-links small"><a href="https://sarah-yu.github.io/simon" target="_blank">Live</a> / <a href="https://github.com/sarah-yu/simon" target="_blank">Code</a></p>
+          </div>
+          <p class="project-description">Simon Learns Chinese is based on the concept of the memory game, Simon, and inspired by gamified language learning apps. The purpose of the game is to test users' memories while allowing users to gain a basic but intuitive understanding of the Chinese language through repeated exposure to simple vocabulary and grammar patterns.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <section id="contact">
+      <a href="mailto:sarahyu.work@gmail.com">sarahyu.work@gmail.com</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">GitHub</a>
+      <a href="#">GA Profile</a>
+    </section>
+
+    <footer id="about-more">
+      <h2>About Sarah</h2>
+      <div class="about-more-img">
+        <img src="img/hi.jpg" alt="sarah says hello">
+      </div>
+      <p>Currently based in Gaithersburg, MD. Just graduated from General Assembly's Web Development Immersive Program. Open to opportunities in Washington, DC and other cities around the world.</p>
+      <p>When I'm not coding, I enjoy hiking, taking pictures of things, and hanging out with my tuxedo cat, Muscat. Some other things I am enjoying recently include <a href="#">Known and Strange Things</a>, <a href="#">What We Do in the Shadows</a>, and eating copious amounts of kimchi.</p>
+      <a href="#">Get in touch.</a>
+    </footer>
   </body>
 </html>
