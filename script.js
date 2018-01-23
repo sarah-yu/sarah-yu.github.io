@@ -1,5 +1,4 @@
 $('document').ready(() => {
-	// project image hover
 	$('#simon-img').mouseenter(function() {
 		$(this).attr('src', 'img/simon.gif')
 	})
@@ -31,12 +30,10 @@ $('document').ready(() => {
 	// open and close contact
 	let contactOpenClose = $('.contact-open-close')
 	let overlay = $('.overlay')
-	let main = $('.main')
 
 	contactOpenClose.on('click', e => {
 		e.preventDefault()
 
 		overlay.fadeToggle(400)
-		main.toggleClass('hide-main')
 	})
 })
