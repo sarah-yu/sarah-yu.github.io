@@ -36,4 +36,61 @@ $('document').ready(() => {
 
 		overlay.fadeToggle(400)
 	})
+
+	// info hover images
+	let infoImage = $('.info-image')
+	let ga = $('#info-ga')
+	let muscat = $('#info-muscat')
+	let known = $('#info-known')
+	let shadows = $('#info-shadows')
+	let kimchi = $('#info-kimchi')
+
+	ga.hover(
+		() => {
+			infoImage.html('<img src="img/ga.png" alt="General Assembly" />')
+		},
+		() => {
+			infoImage.html('')
+		}
+	)
+
+	muscat.hover(
+		() => {
+			infoImage.html('<img src="img/muscat.jpg" alt="Muscat the tuxedo cat" />')
+		},
+		() => {
+			infoImage.html('')
+		}
+	)
+
+	known.hover(
+		() => {
+			infoImage.html(
+				'<img src="img/known.jpeg" alt="Known and Strange Things by Teju Cole" />'
+			)
+		},
+		() => {
+			infoImage.html('')
+		}
+	)
+
+	shadows.hover(
+		() => {
+			infoImage.html(
+				'<img src="img/shadows.jpg" alt="What We Do in the Shadows" />'
+			)
+		},
+		() => {
+			infoImage.html('')
+		}
+	)
+
+	kimchi.hover(
+		() => {
+			infoImage.html('<img src="img/kimchi.png" alt="kimchi" />')
+		},
+		() => {
+			infoImage.html('')
+		}
+	)
 })
