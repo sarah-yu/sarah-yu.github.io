@@ -68,10 +68,6 @@ nav {
 	padding: 3rem 2rem;
 }
 
-nav a {
-	display: inline-block;
-}
-
 /*  MAIN / SECTION */
 main {
 	display: flex;
