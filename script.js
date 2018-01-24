@@ -27,6 +27,13 @@ $('document').ready(() => {
 		$(this).attr('src', 'img/piece-peace.png')
 	})
 
+	$('#cool-beans-img').mouseenter(function() {
+		$(this).attr('src', 'img/cool-beans-hover.gif')
+	})
+	$('#cool-beans-img').mouseleave(function() {
+		$(this).attr('src', 'img/cool-beans.png')
+	})
+
 	// open and close contact
 	let contactOpenClose = $('.contact-open-close')
 	let overlay = $('.overlay')
