@@ -1,161 +1,79 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Sarah Yu | Web Developer</title>
-    <meta name="description" content="Portfolio of projects and work by Sarah Yu, a front-end web developer based in Washington, D.C.">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sarah Yu</title>
+    <meta name="description" content="Web Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!--  HK GROTESK -->
-    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/hk-grotesk" type="text/css"/>
-    <!-- NORMALIZE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" />
-    <link rel="stylesheet" href="style.css">
-    <!--  JQUERY -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!--  SCRIPT.JS-->
-    <script type="text/javascript" src="script.js"></script>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <a href="#" class="logo p">Sarah Yu</a>
-        <a href="#contact" class="color-link contact-open-close p">Contact</a>
-      </nav>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="container">
+
+    <header class="header">
+        <div class="header__intro">
+            <a href="/" class="header__name">Sarah Yu</a>
+            <p class="header__occupation">Web Developer</p>
+            <div class="divider">&nbsp</div>
+        </div>
+        <div class="header__contact">
+            <a href="mailto:sarahyu.work@gmail.com" class="header__contact-link header__contact-link--email">sarahyu.work@gmail.com</a>
+            <a href="https://www.linkedin.com/in/sarah---yu" target="_blank" class="header__contact-link">LinkedIn</a>
+            <a href="https://github.com/sarah-yu" target="_blank" class="header__contact-link">GitHub</a>
+            <a href="https://profiles.generalassemb.ly/profiles/sarah-yu" target="_blank" class="header__contact-link">GA Profile</a>
+            <a href="#" target="_blank" class="header__contact-link">Resume</a>
+        </div>
     </header>
 
-    <main>
-      <section id="about">
-        <p class="about-content h1"><span class="highlight">Sarah</span> is a <span class="highlight">web developer</span> driven by a desire to understand and a love for clean design. She loves coding thoughtful solutions and meaningful experiences. <a href="#info" class="underline-link">Read more about her</a>, <a href="#projects" class="underline-link">check out her projects</a>, or <a href="#contact" class="underline-link contact-open-close">get in touch</a>.</p>
-      </section>
-
-      <section id="projects">
-        <h2 class="projects-heading p">&mdash; Projects</h2>
-
-        <article class="project">
-          <figure class="project-img">
-            <a href="http://piece-peace.surge.sh" target="_blank">
-              <img src="img/piece-peace.png" id="piece-peace-img" alt="Piece Peace, project thumbnail" />
-            </a>
-          </figure>
-          <div class="project-info">
-            <h3 class="project-name"><a href="http://piece-peace.surge.sh" target="_blank">Piece Peace</a></h3>
-            <p class="project-tech">
-              <span class="project-tech-button small">React.js</span>
-              <span class="project-tech-button small">Express.js</span>
-              <span class="project-tech-button small">Node.js</span>
-              <span class="project-tech-button small">MongoDB</span>
-              <span class="project-tech-button small">HTML/CSS</span>
-            </p>
-          </div>
-          <p class="project-description">Piece Peace is a simple mood board creator, inspired by Pinterest. Users can save images that inspire them and organize them by categories, "mood boards", of their choosing. Piece Peace currently features CRUD functionality, and I am working on a bookmarklet so that users can more easily pin images that they find around the web.
-          </p>
-          <p class="project-links"><a href="http://piece-peace.surge.sh" target="_blank" class="color-link">Live</a> &mdash; <a href="https://github.com/sarah-yu/piece-peace" target="_blank" class="color-link">Code</a></p>
-        </article>
-
-        <article class="project">
-          <figure class="project-img">
-
-            <a href="http://murakami.surge.sh" target="_blank">
-              <img src="img/murakami.png" id="murakami-img" alt="Murakami, project thumbnail" />
-            </a>
-          </figure>
-          <div class="project-info">
-            <h3 class="project-name"><a href="http://murakami.surge.sh">Murakami</a></h3>
-            <p class="project-tech">
-              <span class="project-tech-button small">Vue.js</span>
-              <span class="project-tech-button small">Express.js</span>
-              <span class="project-tech-button small">Node.js</span>
-              <span class="project-tech-button small">MongoDB</span>
-              <span class="project-tech-button small">HTML/CSS</span>
-            </p>
-          </div>
-          <p class="project-description">A Haruki Murakami random quote generator. I created this app after a Teach Yourself Day in class, where I taught myself Vue.js. The Vue.js front-end is deployed to Surge, and the back-end is hosted on Heroku with mLab supporting the Mongo database.
-          </p>
-          <p class="project-links"><a href="http://murakami.surge.sh" target="_blank" class="color-link">Live</a> &mdash; <a href="https://github.com/sarah-yu/murakami" target="_blank" class="color-link">Code</a></p>
-
-        </article>
-
-        <article class="project">
-          <figure class="project-img">
-            <a href="https://winona-movies.herokuapp.com" target="_blank">
-              <img src="img/winona.png" id="winona-img" alt="Winona, project thumbnail" />
-            </a>
-          </figure>
-          <div class="project-info">
-            <h3 class="project-name"><a href="https://winona-movies.herokuapp.com">Winona</a></h3>
-            <p class="project-tech">
-              <span class="project-tech-button small">Ruby on Rails</span>
-              <span class="project-tech-button small">PostgreSQL</span>
-              <span class="project-tech-button small">HTML/CSS</span>
-              <span class="project-tech-button small">TMDB API</span>
-            </p>
-
-          </div>
-          <p class="project-description">Winona is an app where users can create lists to keep track of their favorite movies and movies that they want to watch. It uses The Movie Database API so that users can easily search through an extensive database for movies that they are interested in.
-          </p>
-          <p class="project-links"><a href="https://winona-movies.herokuapp.com" target="_blank" class="color-link">Live</a> &mdash; <a href="https://github.com/sarah-yu/winona" target="_blank" class="color-link">Code</a></p>
-        </article>
-
-        <article class="project">
-          <figure class="project-img">
-            <a href="https://sarah-yu.github.io/simon" target="_blank">
-              <img src="img/simon.png" id="simon-img" alt="Simon Learns Chinese, project thumbnail" />
-            </a>
-          </figure>
-          <div class="project-info">
-            <h3 class="project-name"><a href="https://sarah-yu.github.io/simon">Simon Learns Chinese</a></h3>
-            <p class="project-tech">
-              <span class="project-tech-button small">JavaScript/jQuery</span>
-              <span class="project-tech-button small">HTML/CSS</span>
-            </p>
-
-          </div>
-          <p class="project-description">Simon Learns Chinese is based on the concept of the memory game, Simon, and inspired by gamified language learning apps. The purpose of the game is to test users' memories while allowing users to gain a basic but intuitive understanding of the Chinese language through repeated exposure to simple vocabulary and grammar patterns.
-          </p>
-          <p class="project-links"><a href="https://sarah-yu.github.io/simon" target="_blank" class="color-link">Live</a> &mdash; <a href="https://github.com/sarah-yu/simon" target="_blank" class="color-link">Code</a></p>
-        </article>
-
-        <article class="project">
-          <figure class="project-img">
-            <a href="http://cool--beans.surge.sh" target="_blank">
-              <img src="img/cool-beans.png" id="cool-beans-img" alt="Cool Beans, project thumbnail" />
-            </a>
-          </figure>
-          <div class="project-info">
-            <h3 class="project-name"><a href="http://cool--beans.surge.sh">Cool Beans</a></h3>
-            <p class="project-tech">
-              <span class="project-tech-button small">React.js</span>
-              <span class="project-tech-button small">Express.js</span>
-              <span class="project-tech-button small">Node.js</span>
-              <span class="project-tech-button small">MongoDB</span>
-              <span class="project-tech-button small">HTML/CSS</span>
-            </p>
-          </div>
-          <p class="project-description">Cool Beans is a collaborative resource on coffees from around the world and includes a feature where users can receive coffee recommendations based on their taste preferences. This project was created in collaboration with two other team members.</p>
-          <p class="project-links"><a href="http://cool--beans.surge.sh" target="_blank" class="color-link">Live</a> &mdash; <a href="https://github.com/sarah-yu/coolbeans-front" target="_blank" class="color-link">Code</a></p>
-        </article>
-      </section>
+    <main class="projects">
+        <p class="projects__heading">Projects</p>
+        <section class="project">
+            <a href="https://winona-movies.herokuapp.com" target="_blank" class="project__link"><img src="img/winona.png" alt="project winona" class="project__image"></a>
+            <a href="https://winona-movies.herokuapp.com" target="_blank" class="project__name">winona</a>
+            <p class="project__description">Keep track of movies! A Ruby on Rails project.</p>
+            <div class="project__links">
+                <a href="https://winona-movies.herokuapp.com" target="_blank" class="project__d-link">Live</a>
+                <a href="https://github.com/sarah-yu/winona" target="_blank" class="project__gh-link">Code</a>
+            </div>
+        </section>
+        <section class="project">
+            <a href="http://piece-peace.surge.sh" target="_blank" class="project__link"><img src="img/piece-peace.png" alt="project piece peace" class="project__image"></a>
+            <a href="http://piece-peace.surge.sh" target="_blank" class="project__name">piece peace</a>
+            <p class="project__description">Pinterest copycat. A React.js project.</p>
+            <div class="project__links">
+                <a href="http://piece-peace.surge.sh" target="_blank" class="project__d-link">Live</a>
+                <a href="https://github.com/sarah-yu/piece-peace" target="_blank" class="project__gh-link">Code</a>
+            </div>
+        </section>
+        <section class="project">
+            <a href="http://murakami.surge.sh" target="_blank" class="project__link"><img src="img/murakami.png" alt="project murakami" class="project__image"></a>
+            <a href="http://murakami.surge.sh" target="_blank" class="project__name">murakami</a>
+            <p class="project__description">Haruki Murakami random quote generator. Those who know, know. A Vue.js project.</p>
+            <div class="project__links">
+                <a href="http://murakami.surge.sh" target="_blank" class="project__d-link">Live</a>
+                <a href="https://github.com/sarah-yu/murakami" target="_blank" class="project__gh-link">Code</a>
+            </div>
+        </section>
+        <section class="project">
+            <a href="https://sarah-yu.github.io/simon" target="_blank" class="project__link"><img src="img/simon.gif" alt="project simon" class="project__image"></a>
+            <a href="https://sarah-yu.github.io/simon" target="_blank" class="project__name">simon learns chinese</a>
+            <p class="project__description">Test your memory while learning Chinese. My first JavaScript project.</p>
+            <div class="project__links">
+                <a href="https://sarah-yu.github.io/simon" target="_blank" class="project__d-link">Live</a>
+                <a href="https://github.com/sarah-yu/simon" target="_blank" class="project__gh-link">Code</a>
+            </div>
+        </section>
+        <section class="project">
+            <a href="http://cool--beans.surge.sh" target="_blank" class="project__link"><img src="img/cool-beans.png" alt="project cool beans" class="project__image"></a>
+            <p href="http://cool--beans.surge.sh" target="_blank" class="project__name">cool beans</p>
+            <p class="project__description">Discover coffee from around the world. A React group project.</p>
+            <div class="project__links">
+                <a href="http://cool--beans.surge.sh" target="_blank" class="project__d-link">Live</a>
+                <a href="https://github.com/sarah-yu/coolbeans-front" target="_blank" class="project__gh-link">Code</a>
+            </div>
+        </section>
     </main>
-
-    <section id="contact" class="overlay">
-      <div class="contact-container">
-        <a href="mailto:sarahyu.work@gmail.com" class="color-link h1">Email</a>
-        <a href="https://www.linkedin.com/in/sarah---yu" target="_blank" class="color-link h1">LinkedIn</a>
-        <a href="https://github.com/sarah-yu" target="_blank" class="color-link h1">GitHub</a>
-        <a href="https://profiles.generalassemb.ly/profiles/sarah-yu" target="_blank" class="color-link h1">GA Profile</a>
-        <a href="pdf/sarah-yu-resume.pdf" target="_blank" class="color-link h1">Resume</a>
-        <a href="#" class="contact-open-close">x</a>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <a href="mailto:sarahyu.work@gmail.com" class="color-link h1">Email</a>
-      <a href="https://www.linkedin.com/in/sarah---yu" target="_blank" class="color-link h1">LinkedIn</a>
-      <a href="https://github.com/sarah-yu" target="_blank" class="color-link h1">GitHub</a>
-      <a href="pdf/sarah-yu-resume.pdf" target="_blank" class="color-link h1">Resume</a>
-    </footer>
-  </body>
+</body>
 </html>

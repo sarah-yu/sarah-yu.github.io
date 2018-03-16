@@ -1,0 +1,155 @@
+// VARIABLES
+$font-primary: 'Inconsolata', monospace;
+
+$color-primary: #333;
+$color-highlight: rgba(118, 255, 3, .6);
+
+// BREAKPOINTS
+$bp-largest: 85rem;         // 1360px / 16px = 85em
+$bp-large: 75em;            // 1200px
+$bp-medium: 56.25em;        // 900px
+$bp-small: 43.75em;         // 700px
+$bp-smallest: 31.25em;      // 500px
+
+// MIXINS
+@mixin default-link {
+    text-decoration: none;
+    color: $color-primary;
+    transition: all .2s;
+    backface-visibility: hidden;
+    display: inline-block;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: rgba($color-primary, .8);
+        outline: none;
+    }
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+::selection {
+    background-color: $color-highlight;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    color: $color-primary;
+    font-family: $font-primary;
+    font-weight: 400;
+    line-height: 1.6;
+    padding: 3rem;
+}
+
+.container {
+    font-size: 1.4rem;
+    display: flex;
+    
+    @media only screen and (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+}
+
+.header {
+    flex: 0 0 20vw;
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin-right: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3.5rem;
+    }
+
+    &__name {
+        @include default-link;
+    }
+
+    &__contact {
+        margin-top: 1.5rem;
+    }
+
+    &__contact-link {
+        @include default-link;
+
+        &--email {
+            display: block;
+        }
+    }
+}
+
+.divider {
+    &::before {
+        content: "_";
+    }
+}
+
+.projects {
+    display: flex;
+    flex-flow: row wrap;
+
+    &__heading {
+        flex: 0 0 100%;
+        margin-bottom: 2rem;
+    }
+
+    .project {
+        flex: 0 0 50%;
+
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+
+        &__image {
+            width: 48rem;
+
+            @media only screen and (max-width: $bp-largest) {
+                width: 40rem;
+            }
+
+            @media only screen and (max-width: $bp-large) {
+                width: 30rem;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                width: 80vw;
+            }
+        }
+
+        &__name {
+            @include default-link;
+            display: block;
+            margin-bottom: .5rem;
+        }
+
+        &__description {
+            width: 65%;
+            margin-bottom: 1rem;
+
+            @media only screen and (max-width: $bp-medium) {
+                width: 70%;
+            }
+
+            @media only screen and (max-width: $bp-small) {
+                width: 90%;
+            }
+        }
+
+        &__d-link,
+        &__gh-link {
+            @include default-link;            
+        }
+    }
+}
